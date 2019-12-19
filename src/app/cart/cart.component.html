@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <tr *ngFor="let item of Carts;let i=index" class="center">
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+
+
+                <td>
+                    <span>
+
+                        <i class="material-icons cursor" (click)="onMinusItem(i)">
+                            remove_circle
+                        </i>
+
+                        <input type="text" [value]="item.ItemCount" [(ngModel)]="item.ItemCount"
+                            (ngModelChange)="item.ItemCount = $event" name="itemText" class="center"
+                            style="    width: 71px;">
+
+                        <i class="material-icons cursor" (click)="onPlusItem(i)">
+                            add_circle
+                        </i>
+                    </span>
+                </td>
+                <td>
+                    <span *ngIf="item.Inputrate">{{item.Inputrate}}</span>
+                    <span *ngIf="!item.Inputrate">0</span>
+                </td>
+                <td>
+                    <i class="material-icons cursor" (click)="RemoveItem(i)" style="color: red;">
+                        cancel
+                    </i>
+                </td>
+            </tr>
+        </table>
+        <div style="float: right;">
+            Total: {{TotalAmount}}
+        </div>
+    </div>
+</div>

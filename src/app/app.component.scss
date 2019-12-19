@@ -1,0 +1,91 @@
+.sidenav-container {
+    height: 100%;
+  }
+  #top
+  {
+    width:100%;
+    height:56px;
+  }
+  .sidenav {
+    width: 250px !important;
+    border:none;
+    background: rgb(243, 243, 243);
+    box-shadow:0 0 15px rgb(75, 15, 1);
+  }
+  .sidenav::-webkit-scrollbar-thumb
+  {
+    width:0px;
+  }
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  .mat-toolbar.mat-primary {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  } 
+  .mat-nav-list
+  {
+    padding-top:0px !important;
+  }
+  .user-profile
+  {
+  width:100%;
+  text-align: center;
+  padding-top:40px;
+  background-size: 100%;
+  padding-bottom:40px;
+//   background: url('../../assets/logo/user-bg.png');
+  background-repeat: round;
+  }
+  .user-profile img {
+    width:90px;
+    border-radius:45px;
+    height:90px;
+    box-shadow:0 0 15px rgb(46, 5, 5);
+  }
+  .user-info
+  {
+    background:rgb(255, 255, 255);
+    line-height: 30px;
+    box-shadow:0 0 5px rgb(65, 65, 65);
+    margin-bottom:10px; 
+  }
+  .user-info i
+  {
+    color:#4c0909;
+  }
+  .mat-nav-list
+  {
+    overflow-x: auto;
+  }
+  .department
+  {
+    height: calc(100% - 220px) !important;
+    overflow: scroll;
+    background: #ffffff;
+    
+  }
+  .department::-webkit-scrollbar{
+    width:5px;
+  }
+  .department::-webkit-scrollbar-thumb{
+    background:gray;
+  }
+  .mat-nav-list{
+    font-family: 'Sawarabi Gothic', sans-serif !important;
+  }
+  .user-info .col-4 {
+    padding-left: 0;
+  }
+  .department a{
+    height: 38px;
+      font-weight: bold;
+      color: #616060;
+      font-size: 14px;
+      box-shadow: 20px 3px 15px 1px rgb(65, 65, 65);
+      
+  }
+  .mat-list-item{
+    background: white !important;
+  }

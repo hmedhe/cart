@@ -1,0 +1,19 @@
+<div class="container">
+    <div *ngFor="let product of Products">
+        <mat-card class="product-container">
+            <div class="d-flex">
+                <span class="col-md-4">Product Name: {{product.name}}</span>
+
+                <span class="col-md-4"> Price: {{product.price}} INR</span>
+
+                <span class="col-md-4">
+
+                    <button mat-raised-button color="primary" class="button" (click)="AddCart(product)">Add To
+                        cart</button>
+
+                </span>
+            </div>
+
+        </mat-card>
+    </div>
+</div>
